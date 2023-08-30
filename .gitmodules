@@ -1,0 +1,3 @@
+[submodule "MyCodeLibrary"]
+	path = MyCodeLibrary
+	url = https://github.com/Cpeterson12/MyCodeLibrary
