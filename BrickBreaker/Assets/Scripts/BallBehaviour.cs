@@ -24,4 +24,11 @@ public class BallBehaviour : MonoBehaviour
       force.y = 1f;
       this.rigidbody.AddForce(force.normalized * this.ballSpeed.value);
    }
+
+   private void OnCollisionEnter(Collision collision)
+   {
+      Vector3 force = Vector3.zero;
+      force.x = Random.Range(-1f, 1f);
+      this.rigidbody.AddForce(force.normalized * this.ballSpeed.value);
+   }
 }
