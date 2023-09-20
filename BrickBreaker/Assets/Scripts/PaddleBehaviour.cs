@@ -10,28 +10,18 @@ public class PaddleBehaviour : MonoBehaviour
     
     public void OnPointerDown() 
     {
-        StartCoroutine(MoveContinuously(1));
-    }
-    
-    public void OnPointerDownTwo() 
-    {
-        StartCoroutine(MoveContinuously(-1));
-    }
-    
-    public void OnPointerUp()  
-    {
-        StopCoroutine(MoveContinuously(-1)); 
-    }
-    public void OnPointerUpTwo()  
-    {
-        StopCoroutine(MoveContinuously(1)); 
+        moveCoroutine = StartCoroutine(MoveContinuously());
     }
 
-    IEnumerator MoveContinuously(int direction)
+    public void OnPointerUp()  
+    {
+        StopCoroutine(moveCoroutine); 
+    }
+    
+    IEnumerator MoveContinuously()
     {
         while(true) 
         {
-            mover.direction = direction;
             mover.Move(transform);
             yield return null;
         }

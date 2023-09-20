@@ -12,7 +12,7 @@ public class BallBehaviour : MonoBehaviour
       this.rigidbody = GetComponent<Rigidbody>();
    }
 
-   public void Start()
+   public void Moveball()
    {
       GiveTrajectory();
    }
@@ -25,7 +25,7 @@ public class BallBehaviour : MonoBehaviour
       this.rigidbody.AddForce(force.normalized * this.ballSpeed.value);
    }
 
-   private void OnCollisionEnter(Collision collision)
+   private void OnCollisionEnter(Collision other)
    {
       Vector3 force = Vector3.zero;
       force.x = Random.Range(-1f, 1f);
