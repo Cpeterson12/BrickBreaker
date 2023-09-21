@@ -958,8 +958,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2df691a2327d847841d4b19f22e9a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
-  minSpeed: 190
+  maxSpeed: 8
+--- !u!114 &1200488038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200488021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd28d9cdfe278fa4183f51139589bc3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeed: 6
 --- !u!1 &1325877163
 GameObject:
   m_ObjectHideFlags: 0
