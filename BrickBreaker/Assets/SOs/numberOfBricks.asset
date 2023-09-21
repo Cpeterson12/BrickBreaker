@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c932db383a2ff47840aacc80244a7c, type: 3}
   m_Name: numberOfBricks
   m_EditorClassIdentifier: 
-  value: 10
+  value: 12

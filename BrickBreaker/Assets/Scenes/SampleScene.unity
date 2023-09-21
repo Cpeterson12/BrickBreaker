@@ -903,8 +903,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.018639117, y: 0.017586369, z: 0.011336649}
-  m_Center: {x: 0.0003229907, y: 0.00006597134, z: 0.00013861692}
+  m_Size: {x: 0.014131515, y: 0.0133049125, z: 0.011336649}
+  m_Center: {x: 0.00009806746, y: -0.000046705605, z: 0.00013861692}
 --- !u!54 &1200488028
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -992,6 +992,10 @@ MonoBehaviour:
   brickPrefab: {fileID: 1990065258010009127, guid: f9de9d6300308a54faf86fde504ac660,
     type: 3}
   numBricks: {fileID: 11400000, guid: bd6bcec19f17ac540ae660a077d2f158, type: 2}
+  brickPositionsOptions:
+  - {fileID: 11400000, guid: 45137983df782ab42b8aa27701ae402e, type: 2}
+  - {fileID: 11400000, guid: 72ddfa551b3f78b4d891d2e8578a704b, type: 2}
+  - {fileID: 11400000, guid: 995b830b8f100974fa3a6d25fd73f3f7, type: 2}
 --- !u!4 &1325877165
 Transform:
   m_ObjectHideFlags: 0
@@ -1023,7 +1027,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6da10682cc0236c4b85b67ed59b3db63,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 659.908
+      value: 313.46292
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6da10682cc0236c4b85b67ed59b3db63,
         type: 3}
