@@ -7,7 +7,7 @@ public class PaddleBehaviour : MonoBehaviour
 {
     public MoveData mover; 
     Coroutine moveCoroutine;
-    
+    public GameObject paddle;
     public void OnPointerDown() 
     {
         moveCoroutine = StartCoroutine(MoveContinuously());
@@ -25,5 +25,10 @@ public class PaddleBehaviour : MonoBehaviour
             mover.Move(transform);
             yield return null;
         }
+    }
+
+    public void ReturnPaddle()
+    {
+        paddle.transform.position = new Vector3(0, -3, 0);
     }
 }
