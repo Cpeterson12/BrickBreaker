@@ -7,7 +7,7 @@ public class BrickBehaviour : MonoBehaviour
 {
    public int health = 3;
    public Renderer brickRenderer;
-   public UnityEvent onDestroyed;
+   public UnityEvent onDestroyed, score;
   
    void Start()
    {
@@ -42,6 +42,7 @@ public class BrickBehaviour : MonoBehaviour
       {
          gameObject.SetActive(false); 
       }
+      score.Invoke();
    }
 
    private void OnCollisionEnter(Collision collision)
