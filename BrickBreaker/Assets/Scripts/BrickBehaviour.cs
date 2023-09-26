@@ -7,8 +7,8 @@ public class BrickBehaviour : MonoBehaviour
 {
    public int health = 3;
    public Renderer brickRenderer;
-   public UnityEvent onDestroyed, score;
-  
+   public UnityEvent score;
+
    void Start()
    {
       if(health == 3) 

@@ -129,16 +129,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   brickRenderer: {fileID: 44716858077085682}
-  onDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
   score:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 7dbd4f8a7a7105440807b9f0f8a14436, type: 2}
-        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
-        m_MethodName: UpdateValue
-        m_Mode: 3
+      - m_Target: {fileID: 11400000, guid: 4abb39cfc5dc2704ca6a0a21a96d53fe, type: 2}
+        m_TargetAssemblyTypeName: GameActionBehaviour, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

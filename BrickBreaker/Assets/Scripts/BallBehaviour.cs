@@ -34,6 +34,7 @@ public class BallBehaviour : MonoBehaviour
       Vector3 force = Vector3.zero;
       force.x = Random.Range(-1f, 1f);
       this.rB.AddForce(force.normalized * this.ballSpeed.value);
+      addScore.Invoke();
       
    }
    
